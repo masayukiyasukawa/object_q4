@@ -23,7 +23,7 @@ class Car
 		"ブレーキ搭載"
 	end
 
-	def acceleration_performance_decrease
+	def speed_decrease
 		@speed *= (1 - @crew * 0.05)
 	end
 	

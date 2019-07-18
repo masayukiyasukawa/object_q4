@@ -2,12 +2,17 @@ class Car
 
 	attr_accessor :price, :maker, :capacity, :crew, :speed
 
+	@@total_price = 0
+  @@total_count = 0
+
 	def initialize(price, maker, capacity, crew, speed)
 		@price = price
 		@maker = maker
 		@capacity = capacity
 		@crew = crew
 		@speed = speed
+		@@total_price += price
+    @@total_count += 1
 	end
 
 	def accel

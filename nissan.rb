@@ -1,4 +1,4 @@
-class Nissan < Dealer
+class Nissan < Car
 
   def initialize(price, maker, capacity, crew, speed)
     super
